@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacts List</title>
+</head>
+<body>
+    <h1>Contacts</h1>
+    <ul>
+    {% for contact in contacts %}
+        <li>{{contact["first_name"]}} {{contact["last_name"]}} {{contact["address"]}}</li>
+    {% end %}
+    </ul>
+</body>
+</html>
